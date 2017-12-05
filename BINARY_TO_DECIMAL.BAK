@@ -1,0 +1,70 @@
+//BINARY TO DECIMAL
+#include<stdio.h>
+#include<conio.h>
+
+void main()
+{
+	int num,bin,dec,rem,base;
+	clrscr();
+
+	printf("\n enter the number: ");
+	scanf("%d",&num);
+
+	dec=0;
+	base=1;
+
+	for(;num>0;)
+	{
+		rem=num%10;
+		num=num/10;
+		dec=dec+ rem*base;
+		base=base*2;
+	}
+
+	printf("\n decimal: %d",dec);
+
+
+	getch();
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
