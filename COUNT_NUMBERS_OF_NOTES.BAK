@@ -1,0 +1,73 @@
+//COUNT NUMBERS OF POSSIBLE NOTES
+
+#include<stdio.h>
+#include<conio.h>
+
+void main()
+{
+	int amt,notes,choice;
+	clrscr();
+
+	printf("\nENTER THE AMOUNT: ");
+	scanf("%d",&amt);
+
+	printf("\nENTER THE NOTES FROM WHERE YOU WANT TO START COUNTING: ");
+	scanf("%d",choice);
+
+	switch(choice)
+	{
+		case 1000:
+			notes=notes/1000;
+			printf("NUMBER OF 1000 NOTES ARE: %d",notes);
+			notes=notes%1000;
+			break;
+
+		case 500:
+			notes=notes/500;
+			printf("NUMBER OF 500 NOTES ARE: %d",notes);
+			notes=notes%500;
+			break;
+
+		case 100:
+			notes=notes/100;
+			printf("NUMBER OF 1000 NOTES ARE: %d",notes);
+			notes=notes%100;
+			break;
+
+		case 50:
+			notes=notes/50;
+			printf("NUMBER OF 500 NOTES ARE: %d",notes);
+			notes=notes%50;
+			break;
+
+		case 10:
+			notes=notes/10;
+			printf("NUMBER OF 1000 NOTES ARE: %d",notes);
+			notes=notes%10;
+			break;
+
+		case 5:
+			notes=notes/5;
+			printf("NUMBER OF 500 NOTES ARE: %d",notes);
+			notes=notes%5;
+			break;
+
+		case 2:
+			notes=notes/2;
+			printf("NUMBER OF 1000 NOTES ARE: %d",notes);
+			notes=notes%2;
+			break;
+
+		case 1:
+			notes=notes/1;
+			printf("NUMBER OF 500 NOTES ARE: %d",notes);
+			notes=notes%1;
+			break;
+
+		default:
+			printf("invalid note");
+			break;
+	}
+
+	getch();
+}
