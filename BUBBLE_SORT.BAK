@@ -1,0 +1,46 @@
+//BUBBLE SORT EXAMPLE
+
+#include<stdio.h>
+#include<conio.h>
+
+void main()
+{
+	int a[10]={14,99,62,79,42,78,46,33,75,73},xchange,temp,i,j;
+	clrscr();
+
+	printf("\nbefore sorting\n");
+
+	for(i=0;i<10;i++)
+		printf("%d ",a[i]);
+
+	printf("\n\n");
+
+
+
+	for(i=0;i<9;i++)
+	{
+		xchange=0;
+
+		for(j=0;j<9-i;j++)
+		{
+			if(a[j]>a[j+1])
+			{
+				temp=a[j];
+				a[j]=a[j+1];
+				a[j+1]=temp;
+
+				xchange++;
+			}
+		}
+
+		if(xchange==0)
+			break;
+	}
+
+
+
+	for(i=0;i<10;i++)
+		printf("%d ",a[i]);
+
+	getch();
+}

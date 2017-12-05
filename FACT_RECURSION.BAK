@@ -1,0 +1,87 @@
+//FACTORIAL USING RECURSION
+
+#include<stdio.h>
+#include<conio.h>
+
+int sod(int);
+int sod1(int);
+
+void main()
+{
+	int num,s,s1;
+	clrscr();
+
+	printf("\nENTER A NUMBER: ");
+	scanf("%d",&num);
+
+	s = sod(num);
+	s1 = sod1(num);
+
+	printf("\nRESULT: %d",s);
+	printf("\nRESULT: %d",s1);
+
+	getch();
+}
+
+
+int sod(int num1)
+{
+	if(num1!=0)
+		return ((num1%10)+sod(num1/10));
+
+	else
+		return 0;
+}
+
+
+int sod1(int num2)
+{
+	int rem;
+
+	if(num2!=0)
+	{
+		rem=num2%10;
+		num2=num2/10;
+
+		return (sod1(num2)+rem);
+	}
+
+	else
+		return 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

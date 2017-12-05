@@ -1,0 +1,76 @@
+//REVERSE A NUMBER USING RECURSION
+
+#include<stdio.h>
+#include<conio.h>
+
+int reverse(int);
+
+void main(){
+	int num,A;
+	clrscr();
+
+	printf("\nENTER A NUMBER:\n ");
+	scanf("%d",&num);
+
+	A = reverse(num);
+
+	printf("reverse of number: %d",A);
+
+	getch();
+}
+
+int rev=0,rem;   //imp is 'rev' and 'rem' should be global
+
+int reverse(int n)
+{
+	if(n==0)
+		return rev;
+	else{
+		rem = n%10;
+		rev = rem + rev*10;
+
+		return(reverse(n/10));
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

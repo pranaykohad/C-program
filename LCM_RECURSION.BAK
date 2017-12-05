@@ -1,0 +1,75 @@
+//LCM USING RECURSION
+
+#include<stdio.h>
+#include<conio.h>
+
+int lcm(int,int);
+
+void main()
+{
+	int a,b;
+	clrscr();
+
+	printf("\n enter 2 numbers: ");
+	scanf("%d %d",&a,&b);
+
+	printf("\n LCM: %d",lcm(a,b));
+
+	getch();
+}
+
+int lcm(int x,int y)
+{
+	static int temp=1;
+
+
+		if(temp%x==0 && temp%y==0)
+			return temp;
+
+		else
+		{
+			temp++;
+			return lcm(x,y);
+		}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

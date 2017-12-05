@@ -1,0 +1,103 @@
+//SUM AND REVERSE A NUMBER USING RECURSION
+#include<stdio.h>
+#include<conio.h>
+
+int rev(long int);
+int sum(long int);
+
+void main()
+{
+	long int num,r,s;
+	clrscr();
+
+	printf("\nENTER A NUMBER: ");
+	scanf("%ld",&num);
+
+	r=rev(num);
+
+	s=sum(num);
+
+	printf("\nREVERSE OF NUMBER: %ld",r);
+
+	printf("\n\nSUM OF DIGIT: %ld",s);
+
+	getch();
+}
+
+
+
+int rev(long int num1)
+{
+  long int rem,re;
+
+  re=0;
+
+  for(;num1>0;)
+  {
+	rem=num1%10;
+	num1=num1/10;
+
+	re=(re*10)+rem;
+  }
+
+  return re;
+}
+
+
+
+int sum(long int num2)
+{
+	long int rem,su;
+
+	su=0;
+
+	for(;num2>0;)
+	{
+		rem=num2%10;
+		num2=num2/10;
+
+		su=su+rem;
+	}
+
+	return su;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

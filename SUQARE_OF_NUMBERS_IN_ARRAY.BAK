@@ -1,0 +1,30 @@
+//SUQARE OF NUMBERS IN ARRAY
+
+#include<stdio.h>
+#include<conio.h>
+
+int sos(int[]);
+
+void main()
+{
+	int i,s,a[5]={1,2,3,4,5};
+	clrscr();
+
+	s=sos(a);
+
+	printf("\nSUM OF SQUARE: %d",s);
+
+	getch();
+}
+
+int sos(int val[])
+{
+	int i,sum;
+
+	sum=0;
+
+	for(i=0;i<5;i++)
+		sum=sum+(val[i] * val[i]);
+
+	return sum;
+}
